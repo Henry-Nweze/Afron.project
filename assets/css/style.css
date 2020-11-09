@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital@1&family=Roboto+Slab:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Open+Sans:wght@600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+body{
+    font-family: lato;
+    background-color:#ffffff;
+    color:#000000;
+}
+
+#logo{
+    float: left;
+    margin-left: 20px;
+    margin-top: 5px;
+    font-size: 120px;
+}
+
+#menu{
+    font-size: 120%;
+    list-style-type: none;
+    letter-spacing: 4px;
+}
+
+#logo, #menu{
+    line-height: 80px;
+}
+#menu li{
+    float: right;
+    margin-right: 70px;
+}
+
+#menu a{
+    text-decoration: none;
+    color: inherit;
+
+}
+
+#menu a:hover{
+    background-color: #1404f5;
+    color: #ffffff;
+}
+    .active{
+        border-bottom: 1px solid #1404f5;
+    }
+#logo :hover{
+    /*background-color: hsl(0, 1%, 52%);*/
+    color: #f5f0f0;
+}
+#afron-img{
+        height: 600px;
+        width: 100%;
+        background: url(../Img/image\ 3.png) no-repeat;
+        background-size: cover;
+        position: relative;
+
+        animation-name: afron-zoom;
+        animation-duration: 5s;
+        animation-fill-mode: forwards;
+    }
+
+    .btn-cn{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate3d(-50%, -50%);
+        background-color: #1404f5;
+        color: #ffffff;
+        font-size: 16px;
+        padding: 12px 24px;
+        border: none;
+        cursor: pointer;
+        border-radius: 5px;
+        }
+        
+        /*.btn{
+            background-color: #1404f5;
+            color: #ffffff;
+        }*/
+
+.btn-cn:hover{
+    background-color: #ffffff;
+    color: #1404f5;
+}
+
+.btn:hover{
+    background-color: #ffffff;
+    color: #1404f5;
+}
+#overlay{
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        background-color: #1404f5;
+        opacity: 0.2;
+    }
+#afronimg-outer{
+        height: 600px;
+        width: 100%;
+       overflow: hidden;
+       position: relative;
+    
+}
+
+@keyframes afron-zoom {
+    from{
+transform: scale(1);
+    }
+    to{
+transform: scale(1.05);
+    }
+
+}
+
+
+#cover-txt{
+    position: absolute;
+    letter-spacing: 5px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+    text-align: center;
+ }
+
+h1{
+     text-transform: uppercase;
+     font-family: Montserrat;
+     margin: 0;
+     font-size: 2.5rem;
+     white-space: nowrap;
+
+ }
+ 
+p{
+     margin: 0;
+     font-family: open Sans;
+     font-size: 1.5rem;
+     font-weight: 1000;
+     margin-top: 30px;
+     padding-bottom: 2px;
+ }
+
